@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VirtualContactInformation.ViewModels;
 
 namespace VirtualContactInformation
 {
@@ -19,6 +20,7 @@ namespace VirtualContactInformation
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new ContactViewModel();
         }
     }
 }
