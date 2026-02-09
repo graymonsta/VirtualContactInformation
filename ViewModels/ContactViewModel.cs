@@ -90,6 +90,7 @@ namespace VirtualContactInformation.ViewModels
             SelectedContact.Email = Email;
 
             Save();
+            ClearFields();
         }
         partial void OnNameChanged(string value)
         {
